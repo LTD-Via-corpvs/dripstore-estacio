@@ -5,22 +5,22 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
-export const NavLinksHeader = () => {
+export const NavLinksList = () => {
   const [activeLink, setActiveLink] = useState('/')
   const pathName = usePathname()
 
   useEffect(() => {
     setActiveLink(pathName)
-    console.log(pathName)
   }, [pathName])
 
-  const activeStyle = 'font-bold text-primary border-b-primary border-b-2'
+  const activeStyle =
+    'font-bold text-primary-figma border-b-primary-figma border-b-2'
 
   return (
-    <nav className="flex gap-8">
+    <nav className="flex flex-col gap-[0.66rem] md:flex-row md:gap-8 ">
       <Link
         className={cn(
-          'border-b-2 border-b-transparent text-base font-normal text-dark-gray-2',
+          'w-fit border-b-2 border-b-transparent text-base font-normal text-dark-gray-2',
           activeLink === '/' && activeStyle,
         )}
         href={'/'}
@@ -29,7 +29,7 @@ export const NavLinksHeader = () => {
       </Link>
       <Link
         className={cn(
-          'border-b-2 border-b-transparent text-base font-normal text-dark-gray-2',
+          'w-fit border-b-2 border-b-transparent text-base font-normal text-dark-gray-2',
           activeLink === '/products' && activeStyle,
         )}
         href={'/products'}
@@ -38,7 +38,7 @@ export const NavLinksHeader = () => {
       </Link>
       <Link
         className={cn(
-          'border-b-2 border-b-transparent text-base font-normal text-dark-gray-2',
+          'w-fit border-b-2 border-b-transparent text-base font-normal text-dark-gray-2',
           activeLink === '/categories' && activeStyle,
         )}
         href={'/categories'}
@@ -47,7 +47,7 @@ export const NavLinksHeader = () => {
       </Link>
       <Link
         className={cn(
-          'border-b-2 border-b-transparent text-base font-normal text-dark-gray-2',
+          'w-fit border-b-2 border-b-transparent text-base font-normal text-dark-gray-2',
           activeLink === '/myOrders' && activeStyle,
         )}
         href={'/myOrders'}

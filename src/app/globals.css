@@ -15,6 +15,6 @@
     }
 
     .padding-t {
-        @apply sm:pt-20 pt-10;
+        @apply sm:pt-16 pt-8;
     }
 }

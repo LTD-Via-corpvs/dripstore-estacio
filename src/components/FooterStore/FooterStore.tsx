@@ -36,6 +36,10 @@ export const FooterStore = () => {
                     ))}
                 </div>
             </div>
+            <hr className='mt-10' />
+            <div className='flex justify-center mt-4'>
+                <p className='text-white'>@ 2022 Digital College</p>
+            </div>
         </footer>
     )
 }

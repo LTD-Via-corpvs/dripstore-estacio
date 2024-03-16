@@ -1,7 +1,7 @@
 export const footerIcons = [
-    { src: 'F', alt: 'test' },
-    { src: 'I', alt: 'test' },
-    { src: 'T', alt: 'test' },
+    { src: 'facebook.svg', alt: 'Facebook' },
+    { src: 'instagram.svg', alt: 'Instagram' },
+    { src: 'twitter.svg', alt: 'Twitter' },
 ]
 
 export const footerLinks = [
@@ -29,8 +29,8 @@ export const footerLinks = [
     {
         title: 'Contato',
         links: [
-            { name: 'Endereço: Av.Santos Dumont, 1510', link: '' },
-            { name: 'Telefone: (85)3051-3411', link: '' },
+            { name: 'Endereço: CDT na Anhanguera', link: '' },
+            { name: 'Telefone: 4002-8922', link: '' },
         ]
     }
 ]

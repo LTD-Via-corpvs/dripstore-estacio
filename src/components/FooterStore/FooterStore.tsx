@@ -15,8 +15,8 @@ export const FooterStore = () => {
                     <p className='text-white mt-8 leading-7 sm:max-w-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, earum in! Possimus culpa, ad alias a eveniet nam aliquid!</p>
                     <div className='flex items-center gap-5 mt-8'>
                         {/*Footer links*/}
-                        {footerIcons.map((icon) => (
-                            <div className='flex justify-center items-center w-12 h-12 bg-white rounded-full'>
+                        {footerIcons.map((icon, ix) => (
+                            <div key={ix} className='flex justify-center items-center w-12 h-12 bg-white rounded-full'>
                                 <Image src={icon.src} alt={icon.alt} width={24} height={24} />
                             </div>
                         ))}
@@ -24,14 +24,14 @@ export const FooterStore = () => {
                 </div>
                 {/*Sections*/}
                 <div className='flex flex-1 justify-between flex-wrap lg:gap-10 gap-20'>
-                    {footerLinks.map((section) => (
-                        <div>
-                            <h4 className='text-white text-xl leading-normal font-medium mb-6'>{section.title}</h4>
+                    {footerLinks.map((section, ix) => (
+                        <div key={ix}>
+                            <h4 className='text-white text-xl select-none leading-normal font-medium mb-6'>{section.title}</h4>
                             <ul>
                                 {/*Section links*/}
-                                {section.links.map((link) => (
-                                    <li className='mt-3 text-white text-base leading-normal hover:text-slate-500 cursor-pointer'>
-                                        <a>{link.name}</a>
+                                {section.links.map((link, ix) => (
+                                    <li key={ix} className='mt-3 select-none text-white text-base leading-normal hover:text-light-gray-2 cursor-pointer'>
+                                        <a href='/'>{link.name}</a>
                                     </li>
                                 ))}
                             </ul>

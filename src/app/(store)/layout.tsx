@@ -1,4 +1,5 @@
 import { HeaderStore } from '@/components/HeaderStore/HeaderStore'
+import { FooterStore } from '@/components/FooterStore/FooterStore'
 import { ReactNode } from 'react'
 
 const LayoutStore = ({ children }: { children: ReactNode }) => {
@@ -9,6 +10,9 @@ const LayoutStore = ({ children }: { children: ReactNode }) => {
     >
       <HeaderStore />
       {children}
+      <section className='bg-dark-gray padding-x padding-t pb-6'> 
+        <FooterStore />
+      </section>
     </div>
   )
 }

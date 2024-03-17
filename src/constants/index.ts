@@ -1,3 +1,5 @@
+import { FilterObject } from '@/components/ProductsStore/types'
+
 export const footerIcons = [
   { src: 'facebook.svg', alt: 'Facebook' },
   { src: 'instagram.svg', alt: 'Instagram' },
@@ -32,5 +34,28 @@ export const footerLinks = [
       { name: 'Endereço: CDT na Anhanguera', link: '' },
       { name: 'Telefone: 4002-8922', link: '' },
     ],
+  },
+]
+
+export const filterProduct: FilterObject[] = [
+  {
+    title: 'Marca',
+    options: ['Adiddas', 'Calenciaga', 'K-Swiss', 'Nike', 'Puma'],
+    multipleOptions: true,
+  },
+  {
+    title: 'Categoria',
+    options: ['Esporte e lazer', 'Casual', 'Utilitário', 'Corrida'],
+    multipleOptions: true,
+  },
+  {
+    title: 'Gênero',
+    options: ['Masculino', 'Feminino', 'Unisex'],
+    multipleOptions: false,
+  },
+  {
+    title: 'Estado',
+    options: ['Novo', 'Usado'],
+    multipleOptions: false,
   },
 ]

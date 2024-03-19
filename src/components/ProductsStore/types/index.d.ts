@@ -21,7 +21,7 @@ export interface InfoProductDiscountProps extends InfoProductProps {
 
 export type ProductsProps = ImageProductProps & InfoProductProps
 
-export type FilterType = {
+export interface FilterType {
   title: string
   multipleOptions: boolean
   options: string[]

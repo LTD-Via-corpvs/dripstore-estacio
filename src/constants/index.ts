@@ -1,4 +1,4 @@
-import { FilterObject } from '@/components/ProductsStore/types'
+import { FilterType, OrderType } from '@/components/ProductsStore/types'
 
 export const footerIcons = [
   { src: 'facebook.svg', alt: 'Facebook' },
@@ -37,7 +37,7 @@ export const footerLinks = [
   },
 ]
 
-export const filterProduct: FilterObject[] = [
+export const filterProduct: FilterType[] = [
   {
     title: 'Marca',
     options: ['Adiddas', 'Calenciaga', 'K-Swiss', 'Nike', 'Puma'],
@@ -59,3 +59,8 @@ export const filterProduct: FilterObject[] = [
     multipleOptions: false,
   },
 ]
+
+export const OrderObject: OrderType = {
+  m_r: 'Mais relevantes',
+  p_c: 'Por categoria',
+}

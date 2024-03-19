@@ -21,8 +21,10 @@ export interface InfoProductDiscountProps extends InfoProductProps {
 
 export type ProductsProps = ImageProductProps & InfoProductProps
 
-export type FilterObject = {
+export type FilterType = {
   title: string
   multipleOptions: boolean
   options: string[]
 }
+
+export type OrderType = Record<string, string>

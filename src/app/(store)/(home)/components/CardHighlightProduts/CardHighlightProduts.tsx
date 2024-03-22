@@ -13,8 +13,8 @@ export const CardHighlightProduts = ({
 }: CardHighlightProdutsProps) => {
   return (
     <div
-      className="relative flex h-[15.68rem]  w-[25.31rem] flex-col
-        overflow-hidden rounded-lg  bg-[#D8E3F2] pb-[2.12rem] pl-[1.88rem] pt-[2.12rem]
+      className="sm:max-h-[15.68rem] sm:min-h-[15.68rem] sm:min-w-[25.31rem]  sm:max-w-[25.31rem] lg:first:ml-0  lg:last:mr-0 sm:first:ml-4
+        sm:last:mr-4 relative  flex flex-col overflow-hidden rounded-lg bg-[#D8E3F2] pb-[2.12rem] pl-[1.88rem] pt-[2.12rem]
         "
     >
       <span

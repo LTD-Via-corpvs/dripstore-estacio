@@ -9,15 +9,15 @@ import { Shoes } from '@/components/icons/Shoes'
 export const FeaturedCollections = () => {
   return (
     <section
-      className=" lg:px-0 mx-auto mt-[2.37rem] flex w-full max-w-[1240px]
-    flex-col items-start   "
+      className=" mx-auto mt-[2.37rem] flex w-full max-w-[1240px] flex-col
+    items-start lg:px-0   "
     >
-      <h2 className=" lg:px-0 px-4 text-2xl font-bold text-dark-gray-2">
+      <h2 className=" px-4 text-2xl font-bold text-dark-gray-2 lg:pl-8 xl:px-0">
         Coleções em destaque
       </h2>
       <div
-        className=" sm:flex-row sm:px-0 mt-5  flex w-full max-w-[1240px] flex-col
-      gap-3 overflow-x-auto px-4 [&::-webkit-scrollbar]:hidden   "
+        className=" mt-5 flex w-full  max-w-[1240px] flex-col gap-3 overflow-x-auto
+      px-4 sm:flex-row sm:px-0 [&::-webkit-scrollbar]:hidden   "
       >
         {Array.from({ length: 3 }).map((_, index) => {
           return (
@@ -43,15 +43,15 @@ export const FeaturedCollections = () => {
         Coleções em destaque
       </h3>
       <div
-        className="2xsm:justify-center mb-[7.69rem] mt-5 flex w-full gap-12
-      overflow-x-auto [&::-webkit-scrollbar]:hidden "
+        className="mb-[7.69rem] mt-5 flex w-full gap-12 overflow-x-auto
+      2xsm:justify-center [&::-webkit-scrollbar]:hidden "
       >
         <div className="ml-4 flex flex-col ">
           <Link
             href={'/'}
             className="flex items-center justify-center rounded-full bg-white p-5"
           >
-            <TShirt className="xl:h-16 xl:w-16 h-10 w-10 " />
+            <TShirt className="h-10 w-10 xl:h-16 xl:w-16 " />
           </Link>
           <span className="mt-3 text-center text-sm font-bold text-dark-gray-2">
             Camisetas
@@ -62,7 +62,7 @@ export const FeaturedCollections = () => {
             href={'/'}
             className="flex items-center justify-center rounded-full bg-white p-5"
           >
-            <Pants className="xl:h-16 xl:w-16 h-10 w-10 " />
+            <Pants className="h-10 w-10 xl:h-16 xl:w-16 " />
           </Link>
           <span className="mt-3 text-center text-sm font-bold text-dark-gray-2">
             Calças
@@ -73,7 +73,7 @@ export const FeaturedCollections = () => {
             href={'/'}
             className="flex items-center justify-center rounded-full bg-white p-5"
           >
-            <HeadPhones className="xl:h-16 xl:w-16 h-10 w-10 " />
+            <HeadPhones className="h-10 w-10 xl:h-16 xl:w-16 " />
           </Link>
           <span className="mt-3 text-center text-sm font-bold text-dark-gray-2">
             Headphones
@@ -84,7 +84,7 @@ export const FeaturedCollections = () => {
             href={'/'}
             className="flex items-center justify-center rounded-full bg-white p-5"
           >
-            <Shoes className="xl:h-16 xl:w-16 h-10 w-10 " />
+            <Shoes className="h-10 w-10 xl:h-16 xl:w-16 " />
           </Link>
           <span className="mt-3 text-center text-sm font-bold text-dark-gray-2">
             Tênis

@@ -1,5 +1,6 @@
-export const ProductsPage = () => {
-  return <div>ProductsPage</div>
-}
+import ProductsMain from '@/components/ProductsStore/ProductsStore'
+
+// Dissecar e separar em componentes depois
+export const ProductsPage = () => <ProductsMain />
 
 export default ProductsPage

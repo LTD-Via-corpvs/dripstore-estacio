@@ -10,7 +10,7 @@ const LayoutStore = ({ children }: { children: ReactNode }) => {
     >
       <HeaderStore />
       {children}
-      <section className='bg-dark-gray padding-x padding-t pb-6'> 
+      <section className="padding-x padding-t bg-dark-gray pb-6">
         <FooterStore />
       </section>
     </div>

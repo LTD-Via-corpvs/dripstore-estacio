@@ -17,9 +17,9 @@ const DiscountTag = ({ discount }: DiscountProductProp) => (
 const ImageContainer = ({ discount, link, alt }: ImageProductProps) => (
   <div className="flex flex-col rounded-md bg-white">
     {discount > 0 && <DiscountTag discount={discount} />}
-    <div className="flex h-[16rem] items-center">
+    <div className="flex items-center md:h-[15rem] xl:h-[16rem]">
       <Image
-        className="-rotate-[30deg]"
+        className="-rotate-[30deg] md:h-[80px] md:w-[160px] lg:h-[130px] lg:w-[244px] xl:h-[134px] xl:w-[248px]"
         src={link}
         alt={alt}
         width={248}

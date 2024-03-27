@@ -36,7 +36,7 @@ const FilterGroup = ({ options, title, multipleOptions }: FilterType) => (
 )
 
 export const FilterSectionProduct = () => (
-  <aside className="w-[20rem] select-none space-y-5 rounded-sm  p-7 text-left">
+  <aside className="select-none space-y-5 rounded-sm p-7  text-left md:w-[14rem] xl:w-[20rem]">
     <span className="text-dark-gray-2">
       <strong>Filtrar por</strong>
     </span>

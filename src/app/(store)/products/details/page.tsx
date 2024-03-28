@@ -1,24 +1,31 @@
+"use client"
+import Image from 'next/image'
+import { cards } from '@/constants'
+
 export const ProductsDetails = () => {
     return (
-        <div className='min-h-svh padding-x flex gap-10 max-container w-full'>
-            <div className="flex flex-col xl:w-2/4 w-full">
-                <div className="w-full h-[60%] border border-black" />
-                <div className="flex gap-4 mt-5">
-                    <div className="w-28 h-20 bg-pink-500" />
-                    <div className="w-28 h-20 bg-red-500" />
-                    <div className="w-28 h-20 bg-blue-500" />
-                    <div className="w-28 h-20 bg-green-500" />
-                    <div className="w-28 h-20 bg-yellow-500" />
+        <div className='min-h-screen padding-x flex max-lg:flex-col lg:gap-10 gap-10 max-container w-full'>
+            <div className="flex flex-col flex-1 w-full">
+                <div className="w-full h-[52%] max-lg:h-[500px] max-sm:h-[350px] bg-pink-200 flex justify-center items-center">
+                    <Image src="/sneakers.png" alt="Digital Store" width={300} height={300} />
+                </div>
+                <div className="flex gap-4 mt-5 w-full justify-between items-center">
+                    {cards.map(({ color }, ix) => (
+                        <div key={ix} className={`flex justify-center items-center w-28 h-24 rounded-lg ${color} ${ix === (cards.length - 1) ? 'max-sm:hidden' : ''}`}>
+                            {/* TODO: Brincar um poquinho */}
+                            <Image onClick={() => console.log('oi')} src="/sneakers.png" alt="Digital Store" width={118} height={96} />
+                        </div>
+                    ))}
                 </div>
             </div>
 
-            <div className="flex flex-1 flex-col">
+            <div className="flex flex-1 flex-col justify-start h-[60%] max-lg:mb-10">
                 <p className="text-3xl font-semibold sm:max-w-sm">Tênis Nike Revolution 6 Next Nature Masculino</p>
                 <p className="text-gray-500 mt-1"><small>Casual | Nike | REF:23897123</small></p>
                 <div className="flex gap-3 mt-1">
                     <p>⭐⭐⭐⭐⭐</p>
                     <p>4.7⭐</p>
-                    <p><span className="text-gray-500">(90 avaliações)</span></p>
+                    <p><span className="text-gray-500 min-w-lg">(90 avaliações)</span></p>
                 </div>
                 <div className="flex gap-3 mt-3">
                     <p><small className="text-gray-500">R$</small><span className="text-3xl">219</span>,00</p>

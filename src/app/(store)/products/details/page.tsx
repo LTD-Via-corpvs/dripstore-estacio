@@ -1,19 +1,23 @@
 "use client"
 import Image from 'next/image'
 import { cards } from '@/constants'
+import { useState } from 'react'
 
 export const ProductsDetails = () => {
+    const [bg, setBg] = useState('bg-pink-200')
+    const handleBackground = (setBg: any, color: any) => {
+        setBg(color)
+    }
     return (
         <div className='min-h-screen padding-x flex max-lg:flex-col lg:gap-10 gap-10 max-container w-full'>
             <div className="flex flex-col flex-1 w-full">
-                <div className="w-full h-[52%] max-lg:h-[500px] max-sm:h-[350px] bg-pink-200 flex justify-center items-center">
+                <div className={`w-full h-[52%] max-lg:h-[500px] max-sm:h-[350px] ${bg} flex justify-center items-center`}>
                     <Image src="/sneakers.png" alt="Digital Store" width={300} height={300} />
                 </div>
                 <div className="flex gap-4 mt-5 w-full justify-between items-center">
                     {cards.map(({ color }, ix) => (
                         <div key={ix} className={`flex justify-center items-center w-28 h-24 rounded-lg ${color} ${ix === (cards.length - 1) ? 'max-sm:hidden' : ''}`}>
-                            {/* TODO: Brincar um poquinho */}
-                            <Image onClick={() => console.log('oi')} src="/sneakers.png" alt="Digital Store" width={118} height={96} />
+                            <Image onClick={() => handleBackground(setBg, color)} src="/sneakers.png" alt="Digital Store" width={118} height={96} />
                         </div>
                     ))}
                 </div>

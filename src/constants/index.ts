@@ -35,7 +35,7 @@ export const footerLinks = [
     }
 ]
 
-export const cards = [
+export const colors = [
     { color: 'bg-pink-200' },
     { color: 'bg-red-200' },
     { color: 'bg-blue-200' },

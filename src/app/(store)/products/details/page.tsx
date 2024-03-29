@@ -13,13 +13,13 @@ export const ProductsDetails = () => {
             <div className="flex flex-col flex-1 w-full">
                 <div className={`w-full h-[52%] max-lg:h-[500px] max-sm:h-[350px] ${bg} flex justify-center items-center`}>
                     {/*TODO: Imagem de forma dinâmica*/}
-                    <Image src="/sneakers.png" alt="Digital Store" width={300} height={300} />
+                    <Image src="/sneakers.png" alt="Digital Store" width={300} height={150} />
                 </div>
                 <div className="flex gap-4 mt-5 w-full justify-between items-center">
                     {colors.map(({ color }, ix) => (
-                        <div key={ix} className={`flex justify-center items-center rounded-md w-28 h-24 cursor-pointer ${color === bg ? 'border border-black' : ''} ${color} ${ix === (colors.length - 1) ? 'max-sm:hidden' : ''}`}>
+                        <div onClick={() => handleBackground(color)} key={ix} className={`flex justify-center items-center rounded-md w-28 h-24 cursor-pointer ${color === bg ? 'border border-black' : ''} ${color} ${ix === (colors.length - 1) ? 'max-sm:hidden' : ''}`}>
                             {/*TODO: Imagem de forma dinâmica*/}
-                            <Image onClick={() => handleBackground(color)} src="/sneakers.png" alt="Digital Store" width={118} height={96} />
+                            <Image src="/sneakers.png" alt="Digital Store" width={70} height={35} />
                         </div>
                     ))}
                 </div>

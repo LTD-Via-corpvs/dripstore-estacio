@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 export const ProductsDetails = () => {
     const [bg, setBg] = useState('bg-pink-200')
-    const handleBackground = (setBg: any, color: any) => {
+    const handleBackground = (color: any) => {
         setBg(color)
     }
     return (
@@ -17,7 +17,7 @@ export const ProductsDetails = () => {
                 <div className="flex gap-4 mt-5 w-full justify-between items-center">
                     {cards.map(({ color }, ix) => (
                         <div key={ix} className={`flex justify-center items-center w-28 h-24 rounded-lg ${color} ${ix === (cards.length - 1) ? 'max-sm:hidden' : ''}`}>
-                            <Image onClick={() => handleBackground(setBg, color)} src="/sneakers.png" alt="Digital Store" width={118} height={96} />
+                            <Image onClick={() => handleBackground(color)} src="/sneakers.png" alt="Digital Store" width={118} height={96} className={`cursor-pointer ${color === bg ? 'border border-black' : ''}`} />
                         </div>
                     ))}
                 </div>
@@ -51,10 +51,12 @@ export const ProductsDetails = () => {
                 <div className="flex flex-col gap-2 mt-4">
                     <p className="text-gray-500">Cor</p>
                     <div className="flex gap-4">
-                        <div className="w-8 h-8 rounded-full bg-pink-500" />
-                        <div className="w-8 h-8 rounded-full bg-red-500" />
+                        {cards.map(({ color }, ix) => (
+                            <div onClick={() => handleBackground(color)} className={`w-8 h-8 rounded-full ${color} cursor-pointer ${color === bg ? 'border border-black' : ''}`} />
+                        ))}
+                        {/* <div className="w-8 h-8 rounded-full bg-red-500" />
                         <div className="w-8 h-8 rounded-full bg-blue-500" />
-                        <div className="w-8 h-8 rounded-full bg-green-500" />
+                        <div className="w-8 h-8 rounded-full bg-green-500" /> */}
                     </div>
                 </div>
                 <button type="button" className="w-60 mt-6 rounded-xl bg-orange-400 text-white font-bold py-2 px-4 hover:bg-orange-600 focus:outline-none focus:border-orange-700 focus:shadow-outline-orange active:bg-orange-700">

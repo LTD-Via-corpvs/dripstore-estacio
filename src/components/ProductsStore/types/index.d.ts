@@ -28,3 +28,8 @@ export interface FilterType {
 }
 
 export type OrderType = Record<string, string>
+
+export interface DropdownProps {
+  value: string
+  setValue: (value: string) => void
+}

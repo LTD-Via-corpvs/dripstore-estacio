@@ -17,7 +17,7 @@ export default function ProductsMain() {
       <section className="ml-[3.9%] flex flex-row">
         <FilterSectionProduct />
         <main className="flex flex-1 select-none flex-col ">
-          <section className="m-7 grid grid-cols-3 gap-7">
+          <section className="m-7 grid grid-cols-2 gap-7 md:grid-cols-3">
             <CardProduct
               alt="tenis"
               link={tenisImg.src}

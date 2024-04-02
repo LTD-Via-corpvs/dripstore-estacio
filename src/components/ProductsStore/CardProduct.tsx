@@ -15,7 +15,7 @@ const DiscountTag = ({ discount }: DiscountProductProp) => (
 )
 
 const ImageContainer = ({ discount, link, alt }: ImageProductProps) => (
-  <div className="flex flex-col rounded-md bg-black">
+  <div className="flex flex-col rounded-md bg-white">
     {discount > 0 && <DiscountTag discount={discount} />}
     <div className="flex h-[16rem] items-center justify-center">
       <Image

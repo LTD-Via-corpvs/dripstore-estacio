@@ -2,6 +2,7 @@
 import { cards, sizeShoes } from '@/constants'
 import { useState } from 'react'
 import Image from 'next/image'
+
 interface Size {
     width: number,
     height: number,
@@ -33,7 +34,11 @@ export const ProductsDetails = ({ params: { id } }: Params) => {
                 <div className="flex gap-4 mt-5 w-full justify-between items-center">
                     {/*Cards*/}
                     {cards.map(({ color }, ix) => (
-                        <div onClick={() => handleBackground(color)} key={ix} className={`flex justify-center items-center rounded-md w-28 h-24 cursor-pointer ${color === bg ? 'border border-black' : ''} ${color} ${ix === (cards.length - 1) ? 'max-sm:hidden' : ''}`}>
+                        <div
+                            key={ix}
+                            onClick={() => handleBackground(color)}
+                            className={`flex justify-center items-center rounded-md w-28 h-24 cursor-pointer ${color === bg ? 'border border-black' : ''} ${color} ${ix === (cards.length - 1) ? 'max-sm:hidden' : ''}`}
+                        >
                             <Image src="/sneakers.png" alt="Digital Store" width={70} height={35} />
                         </div>
                     ))}

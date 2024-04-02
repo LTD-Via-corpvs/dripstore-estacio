@@ -2,13 +2,18 @@
 import { cards, sizeShoes } from '@/constants'
 import { useState } from 'react'
 import Image from 'next/image'
-
-export const ProductsDetails = ({ params: { id } }: any) => {
-    interface Size {
-        width: number,
-        height: number,
-        measure: string,
+interface Size {
+    width: number,
+    height: number,
+    measure: string,
+}
+interface Params {
+    params: {
+        id: string
     }
+}
+
+export const ProductsDetails = ({ params: { id } }: Params) => {
     const [bg, setBg] = useState('bg-pink-200')
     const [size, setSize] = useState<Size>({ width: 320, height: 170, measure: '39' })
 

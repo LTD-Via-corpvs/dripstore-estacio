@@ -4,13 +4,18 @@ import { useState } from 'react'
 import Image from 'next/image'
 
 export const ProductsDetails = ({ params: { id } }: any) => {
+    interface Size {
+        width: number,
+        height: number,
+        measure: string,
+    }
     const [bg, setBg] = useState('bg-pink-200')
-    const [size, setSize] = useState({ width: 320, height: 170 })
+    const [size, setSize] = useState<Size>({ width: 320, height: 170, measure: '39' })
 
     const handleBackground = (color: string) => {
         setBg(color)
     }
-    const handleSize = (size: any) => {
+    const handleSize = (size: Size) => {
         setSize(size)
     }
     return (
@@ -29,7 +34,7 @@ export const ProductsDetails = ({ params: { id } }: any) => {
                     ))}
                 </div>
             </div>
-            
+
             {/*Product info*/}
             <div className="flex flex-1 flex-col justify-start h-[60%] max-lg:mb-10">
                 <p className="text-3xl font-semibold sm:max-w-sm">Tênis Nike Revolution 6 Next Nature Masculino</p>

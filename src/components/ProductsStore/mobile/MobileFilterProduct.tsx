@@ -1,6 +1,5 @@
 import { Filter } from 'lucide-react'
 
-import { Button } from '@/components/ui/button'
 import {
   Sheet,
   SheetContent,
@@ -14,10 +13,8 @@ import { FilterGroup } from './../components/FilterGroup'
 
 export const MobileFilterProduct = () => (
   <Sheet>
-    <SheetTrigger>
-      <Button className="h-16 w-16 bg-primary-figma">
-        <Filter size={32} />
-      </Button>
+    <SheetTrigger className="inline-flex h-16 w-16 items-center justify-center whitespace-nowrap rounded-md bg-primary-figma text-sm font-medium text-primary-foreground ring-offset-background transition-colors">
+      <Filter size={32} />
     </SheetTrigger>
     <SheetContent
       side={'left'}

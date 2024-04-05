@@ -9,7 +9,7 @@ export const FooterStore = () => {
         <div className="flex flex-col items-start">
           <a className="flex gap-4" href="">
             <Image
-              src="/LogoFooter.png"
+              src="/logoFooter.png"
               alt="Digital Store"
               width={40}
               height={40}

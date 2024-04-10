@@ -38,6 +38,22 @@ export const footerLinks: FooterLink[] = [
   },
 ]
 
+export const cards = [
+    { color: 'bg-pink-200' },
+    { color: 'bg-red-200' },
+    { color: 'bg-blue-200' },
+    { color: 'bg-green-200' },
+    { color: 'bg-yellow-200' },
+]
+
+export const sizeShoes = [
+    { width: 320, height: 170, measure: '39' },
+    { width: 340, height: 190, measure: '40' },
+    { width: 360, height: 210, measure: '41' },
+    { width: 380, height: 230, measure: '42' },
+    { width: 400, height: 250, measure: '43' },
+]
+
 export const filterProduct: FilterObject[] = [
   {
     title: 'Marca',
@@ -60,3 +76,4 @@ export const filterProduct: FilterObject[] = [
     multipleOptions: false,
   },
 ]
+

@@ -84,7 +84,7 @@
 
 @layer utilities {
   .padding-x {
-    @apply px-8 sm:px-8;
+    @apply px-8 lg:px-24;
   }
 
   .padding-t {

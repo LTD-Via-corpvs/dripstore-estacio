@@ -1,6 +1,5 @@
-import Image from 'next/image'
-
 import { footerIcons, footerLinks } from '@/constants'
+import Image from 'next/image'
 
 export const FooterStore = () => {
   return (
@@ -10,10 +9,10 @@ export const FooterStore = () => {
         <div className="flex flex-col items-start">
           <a className="flex gap-4" href="">
             <Image
-              src="/group.svg"
+              src="/logoFooter.png"
               alt="Digital Store"
-              width={32}
-              height={32}
+              width={40}
+              height={40}
             />
             <h2 className="text-4xl font-bold text-white">Digital Store</h2>
           </a>

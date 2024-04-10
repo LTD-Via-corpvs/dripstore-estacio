@@ -1,38 +1,39 @@
+import { FooterIcon, FooterLink } from '@/components/FooterStore/types'
 import { FilterObject } from '@/components/ProductsStore/types'
 
-export const footerIcons = [
+export const footerIcons: FooterIcon[] = [
   { src: 'facebook.svg', alt: 'Facebook' },
   { src: 'instagram.svg', alt: 'Instagram' },
   { src: 'twitter.svg', alt: 'Twitter' },
 ]
 
-export const footerLinks = [
+export const footerLinks: FooterLink[] = [
   {
     title: 'Informação',
     links: [
-      { name: 'Sobre Drip Store', link: '' },
-      { name: 'Segurança', link: '' },
-      { name: 'Wishlist', link: '' },
-      { name: 'Blog', link: '' },
-      { name: 'Trabalhe conosco', link: '' },
-      { name: 'Meus pedidos', link: '' },
+      { name: 'Sobre Drip Store', link: '#' },
+      { name: 'Segurança', link: '#' },
+      { name: 'Wishlist', link: '#' },
+      { name: 'Blog', link: '#' },
+      { name: 'Trabalhe conosco', link: '#' },
+      { name: 'Meus pedidos', link: '#' },
     ],
   },
   {
     title: 'Categorias',
     links: [
-      { name: 'Camisetas', link: '' },
-      { name: 'Calças', link: '' },
-      { name: 'Bonés', link: '' },
-      { name: 'Headphones', link: '' },
-      { name: 'Tênis', link: '' },
+      { name: 'Camisetas', link: '#' },
+      { name: 'Calças', link: '#' },
+      { name: 'Bonés', link: '#' },
+      { name: 'Headphones', link: '#' },
+      { name: 'Tênis', link: '#' },
     ],
   },
   {
     title: 'Contato',
     links: [
-      { name: 'Endereço: CDT na Anhanguera', link: '' },
-      { name: 'Telefone: 4002-8922', link: '' },
+      { name: 'Endereço: CDT na Anhanguera', link: '#' },
+      { name: 'Telefone: 4002-8922', link: '#' },
     ],
   },
 ]

@@ -1,4 +1,4 @@
-import { FooterIcon, FooterLink } from '@/components/FooterStore/types'
+import { FooterIcon, OrderType, FooterLink } from '@/components/FooterStore/types'
 import { FilterObject } from '@/components/ProductsStore/types'
 
 export const footerIcons: FooterIcon[] = [
@@ -54,7 +54,7 @@ export const sizeShoes = [
     { width: 400, height: 250, measure: '43' },
 ]
 
-export const filterProduct: FilterObject[] = [
+export const filterProduct: FilterType[] = [
   {
     title: 'Marca',
     options: ['Adiddas', 'Calenciaga', 'K-Swiss', 'Nike', 'Puma'],
@@ -77,3 +77,7 @@ export const filterProduct: FilterObject[] = [
   },
 ]
 
+export const OrderObject: OrderType = {
+  m_r: 'Mais relevantes',
+  p_c: 'Por categoria',
+}

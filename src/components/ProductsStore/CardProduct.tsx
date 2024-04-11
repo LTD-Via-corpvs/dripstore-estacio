@@ -9,7 +9,7 @@ import {
 } from './types'
 
 const DiscountTag = ({ discount }: DiscountProductProp) => (
-  <span className="absolute m-4 items-center rounded-3xl bg-[#E7FF86] p-2 text-xs font-bold text-dark-gray-2">
+  <span className="absolute m-4 items-center rounded-3xl bg-[#E7FF86] p-3 text-base font-bold text-dark-gray-2 md:p-2 md:text-xs">
     {discount}% OFF
   </span>
 )
@@ -17,9 +17,9 @@ const DiscountTag = ({ discount }: DiscountProductProp) => (
 const ImageContainer = ({ discount, link, alt }: ImageProductProps) => (
   <div className="flex flex-col rounded-md bg-white">
     {discount > 0 && <DiscountTag discount={discount} />}
-    <div className="flex h-[16rem] items-center">
+    <div className="flex h-[16rem] items-center justify-center">
       <Image
-        className="-rotate-[30deg]"
+        className="mr-5 h-[75px] w-[160px] -rotate-[30deg] sm:h-[115px] sm:w-[220px] md:h-[80px] md:w-[165px] lg:h-[135px] lg:w-[240px]"
         src={link}
         alt={alt}
         width={248}
@@ -39,7 +39,9 @@ const InfoContainer = ({
     <small className="mb-0.5 font-bold tracking-wide text-light-gray">
       {category}
     </small>
-    <span className="text-lg tracking-wide text-dark-gray">{title}</span>
+    <span className="text-base tracking-wide text-dark-gray sm:text-lg md:text-base lg:text-lg">
+      {title}
+    </span>
     <div className="flex flex-row space-x-2">
       {priceOff !== price ? (
         <>

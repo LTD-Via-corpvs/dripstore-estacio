@@ -1,13 +1,15 @@
 'use client'
 
-import Image from 'next/image'
 import { Search, ShoppingCart } from 'lucide-react'
+import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
+
+import { cn } from '@/ultils/cnMerge'
+
+import { FormSearchProducts } from './FormSearchProducts'
 import { NavLinksInSideBar } from './NavLinksInSideBar'
 import { NavLinksList } from './NavLinksList'
-import { FormSearchProducts } from './FormSearchProducts'
-import { useState } from 'react'
-import { cn } from '@/ultils/cnMerge'
 
 export const HeaderStore = () => {
   const [formSearchIsOpen, setFormSearchIsOpen] = useState(false)

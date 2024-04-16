@@ -1,10 +1,11 @@
+import Image from 'next/image'
+
 import { Bubbles } from '@/components/icons/bubbles'
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
 } from '@/components/ui/carousel'
-import Image from 'next/image'
 
 export const HeroCarousel = () => {
   return (

@@ -1,10 +1,12 @@
 import Image from 'next/image'
-import { CardHighlightProduts } from '../CardHighlightProduts/CardHighlightProduts'
-import { TShirt } from '@/components/icons/TShirt'
 import Link from 'next/link'
-import { Pants } from '@/components/icons/Pants'
+
 import { HeadPhones } from '@/components/icons/HeadPhones'
+import { Pants } from '@/components/icons/Pants'
 import { Shoes } from '@/components/icons/Shoes'
+import { TShirt } from '@/components/icons/TShirt'
+
+import { CardHighlightProduts } from '../CardHighlightProduts/CardHighlightProduts'
 
 export const FeaturedCollections = () => {
   return (
@@ -32,8 +34,8 @@ export const FeaturedCollections = () => {
                 width={355}
                 height={236}
                 quality={100}
-                className="absolute -bottom-[140px] -right-[136px] rotate-[-20.783deg]
-                transform xsm:-bottom-[150px]"
+                className="xsm:-bottom-[150px] absolute -bottom-[140px] -right-[136px]
+                rotate-[-20.783deg] transform"
               />
             </CardHighlightProduts>
           )
@@ -43,8 +45,8 @@ export const FeaturedCollections = () => {
         Coleções em destaque
       </h3>
       <div
-        className="mb-[7.69rem] mt-5 flex w-full gap-12 overflow-x-auto
-      2xsm:justify-center [&::-webkit-scrollbar]:hidden "
+        className="2xsm:justify-center mb-[7.69rem] mt-5 flex w-full gap-12
+      overflow-x-auto [&::-webkit-scrollbar]:hidden "
       >
         <div className="ml-4 flex flex-col ">
           <Link

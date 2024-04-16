@@ -1,13 +1,14 @@
+import { Menu } from 'lucide-react'
 import Link from 'next/link'
+
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
+  // SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from '../ui/sheet'
-import { Menu } from 'lucide-react'
 import { NavLinksList } from './NavLinksList'
 
 export const NavLinksInSideBar = () => {

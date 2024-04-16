@@ -1,5 +1,6 @@
-import { footerIcons, footerLinks } from '@/constants'
 import Image from 'next/image'
+
+import { footerIcons, footerLinks } from '@/constants'
 
 export const FooterStore = () => {
   return (

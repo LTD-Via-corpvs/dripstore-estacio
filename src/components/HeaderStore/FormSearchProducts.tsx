@@ -1,7 +1,8 @@
 'use client '
 
-import { cn } from '@/ultils/cnMerge'
 import { Search } from 'lucide-react'
+
+import { cn } from '@/ultils/cnMerge'
 
 interface FormSearchProductsProps {
   isHidden?: boolean
